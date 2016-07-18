@@ -3,4 +3,4 @@
 
 이너인포 소프트사업부의 웹사이트 개발 프로세스의 방법론을 제시합니다.
 
-![suwonUcityWebsite](__assets__/index_swUcity.jpg)
+![suwonUcityWebsite](__assets__/index_swUcity_light.jpg)
