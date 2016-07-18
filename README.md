@@ -3,6 +3,6 @@
 
 이너인포 소프트사업부의 웹사이트 개발 프로세스의 방법론을 제시합니다.
 
-![메인이미지](__asset__/index_swUcity_light.jpg)
+![메인이미지](__asset__/index_swUcity_light.jpg);
 
-[gitHub에서 md파일 편집 방법](http://daringfireball.net/projects/markdown/)
+[gitHub에서 md파일 편집 방법](http://daringfireball.net/projects/markdown/);
