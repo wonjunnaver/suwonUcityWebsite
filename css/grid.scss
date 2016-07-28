@@ -49,3 +49,25 @@ h6 {
   font-size: 1.25rem;
   line-height: 1.2;
 }
+
+//col grid css
+$colpadingLeftRigntSize:10px;
+[class*="col-"]{float: left;padding-left: $colpadingLeftRigntSize;padding-right: $colpadingLeftRigntSize;}
+@for $i from 1 through 12{
+  $colWidth : percentage($i/12);
+  .col-#{$i}{width:$colWidth;}  
+}
+
+.row:after, .row::after, .clearfix:after, .clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container, .grid {
+  position: relative;
+  width: 1000px;
+  width: 62.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}

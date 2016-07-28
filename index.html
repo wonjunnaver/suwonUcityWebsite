@@ -5,31 +5,121 @@
 	<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9 ie8" dir="ltr" lang="ko-KR"> <![endif]-->
 	<!--[if IE 9]> <html class="no-js lt-ie10 ie9" dir="ltr" lang="ko-KR"> <![endif]-->
 	<meta charset="UTF-8">
-	<title>수원유시티 통합 홈페이지</title>	
+	<title>수원유시티 통합 홈페이지</title>	 
 	<meta name="description" content="광교, 호매실 유시티 통합 홈페이지 입니다">
 	<meta name="keywords" content="수원유시티, U-CITY, 호매실, 광교">
 	<meta name="author" content="innerinfo">
 	<!-- 모바일 대응 -->
 	<meta name="viewport" content="width=1020px, initial-scale=1">
 	<!-- 파비콘 추가 -->
-	<link rel="icon" href="images/favicon-v2.ico" type="image/x-icon"> <!-- IE -->
-	<link rel="shortcut icon" href="images/favicon-v2.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- IE -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
 	<!-- 스타일 로드 -->
-	<!-- <link rel="stylesheet" href="css/guide.css"> -->
-	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/guide.css">
 	<link rel="stylesheet" href="css/iconizr-svg-data.css">
 	<link rel="stylesheet" href="css/style.css">
 	<!-- 스크립트 로드 -->
 	<script src="lib/modernizr.min.js"></script>
 	<script src="lib/detectizr.min.js"></script>
-	<script src="lib/jquery-2.1.1.min.js"></script>
+	<script src="lib/jquery-2.1.1.min.js"></script>	
 </head>
-<body>
+<body class="">
+<div class="guide-overlay"></div>
 <!--[if lte IE 8]>
   <p class="browserupgrade">사용 중인 웹 브라우저는 <strong>보안이 보장되지 않는 오래되었습니다</strong>.
   부디 <a href="http://browsehappy.com/">사용 중인 웹 브라우저를 업그레이드</a>하셔서 안전하고 빠른 웹 서핑을 하시길 권합니다.</p>
 <![endif]-->
-	
+<div class="gnb">
+	<div class="container">
+		<div class="pull-right">
+			<ul>
+				<li><a href="!#" title="">수원시청</a></li>
+				<li><a href="!#" title="">홈</a></li>
+				<li><a href="!#" title="">가 -</a></li>
+				<li><a href="!#" title="">가 +</a></li>
+			</ul>
+			<div class="search">
+				<input type="text" class="search-input">
+				<button type="buttton" class="btn-search"><span class="icon-icon_search-dims icon-icon_search"></span></button>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="page-header">
+	<div class="container">
+		<div class="row">
+			<h1 class="brand"><a class="icon-logo-dims icon-logo" href="#!" title="홈으로 이동"></a></h1>
+			<div class="wrap-nav">
+				<nav class="page-navigation pull-left">
+					<ul class="row reset-list">
+						<li>
+							<a href="#!">센터소개</a>
+							<ul class="row reset-list">
+								<li><a href="#!">연혁</a></li>
+								<li><a href="#!">찾아오시는 길</a></li>
+								<li><a href="#!">견학신청</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#!">U-City란</a>
+							<ul class="row reset-list">
+								<li><a href="#!">개요</a></li>
+								<li><a href="#!">목적</a></li>
+								<li><a href="#!">기본방향</a></li>
+								<li><a href="#!">광교U-city/호매실U-City</a></li>
+								<li><a href="#!">주요사업</a></li>
+								<li><a href="#!">기대효과</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#!">생활정보</a>
+							<ul class="row reset-list">
+								<li><a href="#!">새소식</a></li>
+								<li><a href="#!">행사정보</a></li>
+								<li><a href="#!">종합민원안내</a></li>
+								<li><a href="#!">유용한 사이트</a></li>
+								<li><a href="#!">재난대비</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#!">환경</a>
+							<ul class="row reset-list">							
+								<li><a href="#!">대기정보</a>
+									<ul class="row reset-list">
+										<li><a href="#!">대기시스템개요</a></li>
+										<li><a href="#!">대기측정 기준치정보</a></li>
+										<li><a href="#!">대기측정항목</a></li>
+										<li><a href="#!">대기측정소위치</a></li>
+										<li><a href="#!">대기오염정보</a></li>
+										<li><a href="#!">황사, 오존 정보</a></li>
+									</ul>
+								</li>
+								<li><a href="#!">수질정보</a>
+									<ul class="row reset-list">
+										<li><a href="#!">광교</a></li>
+										<li><a href="#!">호매실</a></li>
+										<li><a href="#!">수질성분정의</a></li>
+										<li><a href="#!">환경기준치조회</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#!">교통정보</a></li>
+					</ul>
+				</nav>
+				<button type="button" class="allMenu">전체메뉴<span class="icon-icon_hamberg icon-icon_hamberg-dims"></span></button>
+			</div><!-- wrap-nav end -->
+		</div>
+	</div>
+</header>
+
+
 </body>
+<script src="js/toggleGuide.js"></script>
+<script src="js/navigation.js"></script>
+<script>
+		
+</script>
 </html>
+

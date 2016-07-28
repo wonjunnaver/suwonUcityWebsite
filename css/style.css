@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/**
+ * --------------------------------
+ * 스타일 모듈 로드
+ * ----------------------------- */
+@import url(./normalize.css);
+@import url(./common.css);
+@import url(./grid.css);
+/* 폰트 스타일 */
+@font-face {
+  font-family: 'notokr-bold';
+  src: url("../fonts/notokr-bold.eot");
+  src: url("../fonts/notokr-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/notokr-bold.woff2") format("woff2"), url("../fonts/notokr-bold.woff") format("woff"), url("../fonts/notokr-bold.ttf") format("truetype"), url("../fonts/notokr-bold.svg#notokr-bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'notokr-medium';
+  src: url("../fonts/notokr-medium.eot");
+  src: url("../fontss/notokr-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/notokr-medium.woff2") format("woff2"), url("../fonts/notokr-medium.woff") format("woff"), url("../fonts/notokr-medium.ttf") format("truetype"), url("../fonts/notokr-medium.svg#notokr-medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'notokr-regular';
+  src: url("../fonts/notokr-regular.eot");
+  src: url("../fonts/notokr-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/notokr-regular.woff2") format("woff2"), url("../fonts/notokr-regular.woff") format("woff"), url("../fonts/notokr-regular.ttf") format("truetype"), url("../fonts/notokr-regular.svg#notokr-regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'notokr-demilight';
+  src: url("../fonts/notokr-demilight.eot");
+  src: url("../fonts/notokr-demilight.eot?#iefix") format("embedded-opentype"), url("../fonts/notokr-demilight.woff2") format("woff2"), url("../fonts/notokr-demilight.woff") format("woff"), url("../fonts/notokr-demilight.ttf") format("truetype"), url("../fonts/notokr-demilight.svg#notokr-demilight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class*='icon-'] {
+  display: inline-block; }
+
+html {
+  font-size: 12px; }
+
+body {
+  font-size: 12px;
+  font-size: 1rem; }
+
+button {
+  background: none;
+  border: 0; }
+
+/* 글로벌 메뉴 */
+.gnb {
+  border-top: 1px solid #8897aa;
+  border-bottom: 1px solid #e0e0e0;
+  height: 40px;
+  overflow: hidden; }
+  .gnb > .container .search {
+    float: left; }
+    .gnb > .container .search input[type="text"] {
+      border: none;
+      font-size: 14px;
+      height: 40px;
+      text-indent: 5px; }
+    .gnb > .container .search .btn-search {
+      background-color: #3e72db;
+      width: 40px;
+      height: 40px; }
+  .gnb > .container ul {
+    margin: 0;
+    float: left; }
+    .gnb > .container ul > li {
+      float: left;
+      padding: 12px 12px;
+      border-left: 1px solid #e0e0e0; }
+      .gnb > .container ul > li > a {
+        font-size: 12px;
+        font-size: 1rem;
+        font-family: "notokr-demilight";
+        color: #8897aa;
+        /* line-height: 4; */
+        text-align: center;
+        border-bottom: solid 1px #c1c8d2; }
+    .gnb > .container ul > li:last-child {
+      border-right: 1px solid #8897aa; }
+
+/* 메인네비게이션 메뉴 */
+.page-header .brand {
+  float: left; }
+  .page-header .brand a {
+    margin-top: 9px; }
+.page-header .wrap-nav {
+  float: right; }
+
+nav {
+  float: left; }
+  nav > ul.depth1 {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    nav > ul.depth1 > li {
+      float: left;
+      margin-right: 70px; }
+      nav > ul.depth1 > li > a {
+        font-size: 18px;
+        font-size: 1.5rem;
+        font-family: "notokr-medium";
+        color: #222222;
+        line-height: 1;
+        text-align: center; }
+      nav > ul.depth1 > li ul.depth2 {
+        display: none;
+        position: absolute; }
+    nav > ul.depth1 > li:first-child {
+      margin-left: 0px; }
+
+.allMenu {
+  border-width: 1px;
+  border-color: #222222;
+  border-style: solid;
+  border-radius: 2px;
+  width: 92px;
+  height: 38px;
+  margin-top: 20px; }
+  .allMenu .icon-icon_hamberg {
+    margin-left: 7px; }
+
+/*# sourceMappingURL=style.css.map */

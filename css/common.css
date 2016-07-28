@@ -1,0 +1,25 @@
+body {
+  margin: 0;  
+}
+
+a{text-decoration: none;}
+li{list-style: none;}
+
+.reset-list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.pull-right{
+  float: right !important;
+}
+.pull-left{
+  float: left !important;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.lt-ie8 .clearfix { zoom: 1; }
