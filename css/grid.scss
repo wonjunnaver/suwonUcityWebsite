@@ -52,10 +52,26 @@ h6 {
 
 //col grid css
 $colpadingLeftRigntSize:10px;
-[class*="col-"]{float: left;padding-left: $colpadingLeftRigntSize;padding-right: $colpadingLeftRigntSize;}
 @for $i from 1 through 12{
   $colWidth : percentage($i/12);
   .col-#{$i}{width:$colWidth;}  
+}
+[class*="col-"]{float: left;padding-left: $colpadingLeftRigntSize;padding-right: $colpadingLeftRigntSize;}
+
+@for $i from 1 through 12{
+  $colWidth : percentage($i/12);
+  .push-#{$i}{left:$colWidth;}  
+}
+[class*="push-"]{position:relative;}
+
+@for $i from 1 through 12{
+  $colWidth : percentage($i/12);
+  .col-offset-#{$i}{margin-left:$colWidth;}  
+}
+
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
 }
 
 .row:after, .row::after, .clearfix:after, .clearfix::after {
@@ -67,7 +83,19 @@ $colpadingLeftRigntSize:10px;
 .container, .grid {
   position: relative;
   width: 1000px;
-  width: 62.5rem;
+  width: 83.33rem;
   margin-left: auto;
   margin-right: auto;
 }
+
+.mrgTop10{margin-top:10px;}
+.mrgTop20{margin-top:20px;}
+.mrgTop30{margin-top:30px;}
+.mrgTop40{margin-top:40px;}
+.mrgTop50{margin-top:50px;}
+.mrgTop60{margin-top:60px;}
+.mrgTop70{margin-top:70px;}
+.mrgTop80{margin-top:80px;}
+.mrgTop90{margin-top:90px;}
+.mrgTop100{margin-top:100px;}
+
