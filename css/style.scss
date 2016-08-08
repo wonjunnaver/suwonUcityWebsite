@@ -58,12 +58,30 @@ li{
   margin-bottom: 0;
   padding-left: 0;
 }
+
+/* 폰트사이즈 */
+$fontSize10px:0.8333rem;
+$fontSize12px:1rem;
+$fontSize13px:1.083rem;
+$fontSize14px:1.167rem;
+$fontSize15px:1.25rem;
+$fontSize16px:1.333rem;
+$fontSize18px:1.5rem;
+$fontSize24px:2rem;
+
+/* 메뉴별  네비게이션 컬러 값 */
+$subColor1:#434a8a;
+$subColor2:#5bac12;
+$subColor3:#25b89b;
+$subColor4:#1b7bd1;
+$subColor5:#3f51b5;
+
 /* 글로벌 메뉴 */
 .gnb{border-top: 1px solid rgb(136, 151, 170);border-bottom: 1px solid #e0e0e0;height:40px;overflow: hidden;
   > .container 
   { 
     .search{float:left;
-      input[type="text"]{border: none;font-size: 14px;height: 40px;text-indent: 5px;}
+      input[type="text"]{border: none;font-size: 14px;font-size:$fontSize14px;height: 40px;text-indent: 5px;}
       .btn-search{
         background-color: rgb(62, 114, 219);
         width: 40px;
@@ -74,7 +92,7 @@ li{
       > li{float: left;padding: 12px 12px;border-left: 1px solid #e0e0e0;
         > a{
           font-size: 12px;
-          font-size: 1rem;
+          font-size: $fontSize12px;
           font-family: "notokr-demilight";
           color: rgb(136, 151, 170);    
           /* line-height: 4; */
@@ -88,24 +106,19 @@ li{
 }
 /* 메인네비게이션 메뉴 */
 
-.page-header{overflow:hidden;
+.page-header{overflow:hidden;/* position:relative; */
   .brand{float:left;
     a{margin-top: 9px;}
   }
   .wrap-nav{/* float:right; */}
 }
-/* 메뉴별  네비게이션 컬러 값 */
-$subColor1:#434a8a;
-$subColor2:#5bac12;
-$subColor3:#25b89b;
-$subColor4:#1b7bd1;
-$subColor5:#3f51b5;
+
 nav{/* float:left; */
   > ul.depth1{ margin-top:34px;/* margin-bottom: 30px; */
     > li{ float: left;margin-right:70px;
       > a{
         font-size: 18px;
-        font-size:1.5rem;
+        font-size:$fontSize18px;
         font-family: "notokr-medium";
         color: rgb(34, 34, 34);
         line-height: 1;
@@ -114,7 +127,7 @@ nav{/* float:left; */
       > ul.depth2{display:none;position: absolute;
          > li > a{
             font-size: 14px;
-            font-size:1.167rem;
+            font-size:$fontSize14px;
             font-family: "notokr-regular";            
             text-align: center;
             z-index: 10;
@@ -124,11 +137,11 @@ nav{/* float:left; */
       }
     }
     > li:first-child{margin-left: 0px;}
-    > li:hover, li.active{
+    > li:hover, > li.active{
       > a{
 
         }
-      ul.depth2{display:block;top: 100px;z-index:10;left: 0;width: 100%;padding:0;
+      > ul.depth2{display:block;top: 100px;z-index:10;left: 0;width: 100%;padding:0;
         > li{float:left;
            > a{
                 border-bottom: 1px solid #ccc;
@@ -136,42 +149,43 @@ nav{/* float:left; */
           }
       }
     }
-    > li:nth-child(1):hover, li:nth-child(1).active{
-       a{color:$subColor1;}
-       ul.depth2 > li > a{
-                color: rgb(67, 74, 138);
-                border-bottom: 1px solid $subColor1;
+    > li:nth-child(1):hover, > li:nth-child(1).active{
+      > a{color:$subColor1;}
+      > ul.depth2 > li > a{
+          color: rgb(67, 74, 138);
+          border-bottom: 1px solid $subColor1;
         }
     }
-    > li:nth-child(2):hover, li:nth-child(2).active{
-       a{color:$subColor2;}
-       ul.depth2 > li > a{
-                border-bottom: 1px solid $subColor2;
+    > li:nth-child(2):hover, > li:nth-child(2).active{
+      > a{color:$subColor2;}
+      > ul.depth2 > li > a{
+          border-bottom: 1px solid $subColor2;
         }
     }
-    > li:nth-child(3):hover, li:nth-child(3).active{
+    > li:nth-child(3):hover, > li:nth-child(3).active{
        a{color:$subColor3;}
        ul.depth2 > li > a{
-                border-bottom: 1px solid $subColor3;
+          border-bottom: 1px solid $subColor3;
         }
     }
-    > li:nth-child(4):hover, li:nth-child(4).active{
+    > li:nth-child(4):hover, > li:nth-child(4).active{
        a{color:$subColor4;}
        ul.depth2 > li > a{
-                border-bottom: 1px solid $subColor4;
+          border-bottom: 1px solid $subColor4;
         }
     }
-    > li:nth-child(5):hover, li:nth-child(5).active{
+    > li:nth-child(5):hover, > li:nth-child(5).active{
        a{color:$subColor5;}
        ul.depth2 > li > a{
-                border-bottom: 1px solid $subColor5;
+          border-bottom: 1px solid $subColor5;
         }
     }
   }
 } 
-.allMenu{
+.btn-allMenu{
   font-family: 'notokr-regular';
-  font-size: 1.167rem;
+  font-size: 14px;
+  font-size: $fontSize14px;
   border-width: 1px;
   border-color: #222222;
   border-style: solid;
@@ -181,17 +195,19 @@ nav{/* float:left; */
   position: absolute;
   right: 0;
   top: 22px;
-  .icon-icon_hamberg{margin-left:7px;color:inherit;font-size: 1rem;}
+  .icon-icon_hamberg{margin-left:7px;color:inherit;font-size:12px;font-size:$fontSize12px;}
   padding:0;
 }
-.allMenu:hover{
+.btn-allMenu:hover{
   color: #3e72db;
   .icon-icon_hamberg{color: #3e72db;}
 }
 
-.depth2Bg{position:relative;border-top:none;border-bottom:1px solid #ddd;height:0;transition:.4s all;overflow: hidden;
+.depth2Bg{/* position:absolute; */position:relative;border-top:none;border-bottom:1px solid #ddd;height:0;transition:.4s all;overflow: hidden;width:100%;
   
-    h2{font-size: 24px;
+    h2{
+    font-size: 24px;
+    font-size: $fontSize24px;
     font-family: "notokr-medium";
     color: rgb(67, 74, 138);
     text-align: left;
@@ -200,6 +216,7 @@ nav{/* float:left; */
   .title{background-color:#f1f5fa;padding-top:34px;padding-left: 20px;height:156px;}
   p{
     font-size: 13px;
+    font-size: $fontSize13px;
     font-family: "notokr-demilight";
     color: rgb(89, 93, 122);
     text-align: left;
@@ -207,4 +224,40 @@ nav{/* float:left; */
   .contBg{border-right:1px solid #ebf0f6;height:156px;background: white;}
   .titleBG{height:156px;position:absolute;background-color:#f1f5fa;}
 }
-.depth2Bg.active{height:160px; border-bottom:3px solid #30344f;border-top:1px solid #ddd;}
+.depth2Bg.active{height:160px; border-bottom:3px solid #30344f; border-top:1px solid #ddd;}
+
+/* 전체메뉴 스타일 */
+.allMenu{padding-top:15px;height:0;transition: .5s all;overflow:hidden;/* position:absolute; */
+  .container{
+    > ul.depth1{/* margin-top:18px; */
+      > li{
+        > a{
+          pointer-events: none;
+          font-size: 16px;
+          font-size: $fontSize16px;
+          font-family: "notokr-regular";
+          color: rgb(51, 51, 51);  
+        }
+        >ul{margin-top:20px;
+          >li{
+            a{
+              font-size: 13px;
+              font-size: $fontSize13px;
+              font-family: "notokr-demilight";
+              color: rgb(102, 102, 102);
+              line-height: 1.846;
+            }
+            >ul{margin-top:6px;margin-bottom:16px;
+              > li{
+                > a:before{content:"-";}
+                > a::before{content:"-";}
+              }
+            }
+          }          
+
+        }
+      }
+    }
+  }
+}
+.allMenu.active{height:400px;border-bottom:3px solid #3e72db;}
