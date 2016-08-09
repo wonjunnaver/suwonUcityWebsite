@@ -24,6 +24,8 @@
 
   var $btnAllMenu = $('.btn-allMenu');
 
+  var $iconHamberg = $('.icon-hamberg-close');
+
   settingRoleProperties();
   settingAllMenuRoleProperties();
 
@@ -98,8 +100,11 @@
     allDeactive();
     if(!$allMenu.hasClass('active')){
       $allMenu.addClass('active');
+      $iconHamberg.addClass('open');
     }else{
       $allMenu.removeClass('active');
+      $iconHamberg.removeClass('open');
     }
+
   })
 })(this);
