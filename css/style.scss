@@ -50,6 +50,18 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'notokr-thin';
+    src: url('../fonts/notokr-thin.eot');
+    src: url('../fonts/notokr-thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/notokr-thin.woff2') format('woff2'),
+         url('../fonts/notokr-thin.woff') format('woff'),
+         url('../fonts/notokr-thin.ttf') format('truetype'),
+         url('../fonts/notokr-thin.svg#notokr-thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 [class*='icon-']{display:inline-block;}
 * {
     -webkit-box-sizing: border-box;
@@ -172,36 +184,40 @@ nav{/* float:left; */
     > li:nth-child(1):hover, > li:nth-child(1).active{
       > a{color:$subColor1;}
       > ul.depth2 > li > a{
-          color: rgb(67, 74, 138);
+          color: $subColor1;
           border-bottom: 1px solid $subColor1;
         }
     }
     > li:nth-child(2):hover, > li:nth-child(2).active{
       > a{color:$subColor2;}
       > ul.depth2 > li > a{
+          color: $subColor2;
           border-bottom: 1px solid $subColor2;
         }
     }
     > li:nth-child(3):hover, > li:nth-child(3).active{
        a{color:$subColor3;}
        ul.depth2 > li > a{
+          color: $subColor3;
           border-bottom: 1px solid $subColor3;
         }
     }
     > li:nth-child(4):hover, > li:nth-child(4).active{
        a{color:$subColor4;}
        ul.depth2 > li > a{
+          color: $subColor4;
           border-bottom: 1px solid $subColor4;
         }
     }
     > li:nth-child(5):hover, > li:nth-child(5).active{
        a{color:$subColor5;}
        ul.depth2 > li > a{
+          color: $subColor5;
           border-bottom: 1px solid $subColor5;
         }
     }
-  }
-} 
+  } 
+}
 .btn-allMenu{
   font-family: 'notokr-regular';
   font-size: 14px;
@@ -334,6 +350,12 @@ nav{/* float:left; */
   background-size: 100% 100%;
 }
 /* 메인 메세지 */
+main{
+  >.container{
+    >.row{border-left: 1px solid #dddddd;}
+  }
+  >.container:after,>.container::after{content:"";border-right: 65px solid #f5f3f6;position: absolute;top: 0;right: -65px;height: 100%;z-index: 1;}
+}
 .massage{padding-top:30px;padding-bottom:20px;
   .col-12{
     span{
@@ -636,4 +658,229 @@ footer{height:150px;border-top:4px solid #6d6e72;background:#fafafa;
     }
 
   }
+}
+/* 서브페이지 스타일 */
+$colorSub1:#ffb72f;
+$colorSub1-bgc:#ffc352;
+$colorSub1-border:#eba219;/* 선색상 */
+
+.sub-mainVis{height: 100px;
+  .wrap-vis{
+    .vis{
+      background:url(../images/lnb_top_icon.png) no-repeat;
+      height:70px;
+      margin-top: 30px;
+    }
+  }
+}
+.sub-mainVis.sub1{background-color:$colorSub1-bgc;
+  .wrap-vis{
+    .vis{
+      background-color:$colorSub1;
+      border-bottom:3px solid $colorSub1-border;
+    }
+  }
+  .vis-text{
+      margin-top: 40px;
+      text-align:right;
+      font-size: 14px;
+      font-size: $fontSize14px;
+      font-family: "notokr-light";
+      color: white;
+      line-height: 1.571;
+      .big{
+        font-size: 16px;
+        font-size: $fontSize16px;
+    }
+  }
+  .vis-end{
+      background:url(../images/sub_mainVis_01.png) no-repeat;
+      background-position: top right;
+      width:100%;
+      height:100px;
+  }
+  
+
+}
+
+.wrap-lnb{}
+.lnb{padding-left:20px;
+  .title-depth1{
+    font-size: 26px;
+    font-size: $fontSize26px;
+    font-family: "notokr-medium";
+    color: rgb(34, 34, 34);
+    line-height: 1.846;
+  }
+  > ul{
+    > li{border-bottom: 1px solid #e5e5e5;padding-left:5px;
+      >a{
+        font-size: 16px;
+        font-size: $fontSize16px;
+        font-family: "notokr-demilight";
+        color: rgb(51, 51, 51);
+        line-height: 2.813;
+      }
+    }
+    > li.active{
+      >a{
+        color: $colorSub1;
+        font-family: "notokr-medium";
+      }
+    }
+    > li:last-child{
+        margin-bottom: 60px;
+    }
+  }
+}
+.wrap-widjetWeather{
+  .widjetWeather{padding-top:25px;background:url(../images/weather_bg_rain.png) no-repeat;background-size:100% 100%;height:213px;text-align:center;
+      .iconWeather{
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+        width:57px;
+        height:58px;
+        background:url(../images/icon_weather_rain.png) no-repeat;
+        margin-bottom:10px;
+      }
+      .today{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        font-size: 12px;
+        font-size: $fontSize12px;
+        color: white;
+        margin-bottom:10px;
+      }    
+      .temp{
+        margin-left: -40px;
+        position: relative;
+        font-size: 40px;
+        font-size: $fontSize40px;
+        letter-spacing: 0;
+        font-style: italic;
+        color: rgb(255, 255, 255);      
+        text-shadow: 0px 1px 1px rgba(154, 114, 85, 0.41);
+        line-height: 1;
+        display: inline-block;
+        margin-bottom:10px;
+        font-family: 'notokr-medium';
+      }
+      .temp:after,.temp::after{
+        content:"C"; background:url(../images/icon_temperature_unit.png) no-repeat;
+        width:14px;
+        height:14px;
+        display:block;
+        position:absolute;
+        top: 0;
+        right: -25px;
+      }
+      .textWeather{
+        font-size: 16px;
+        font-size: $fontSize16px;
+        font-family: "notokr-medium";
+        color: rgb(255, 255, 255);
+        width: 100%;
+        text-align: center;
+        display: block;
+      }
+  }
+  .widjetAir{padding:20px;height:300px;background:white;border-bottom: 1px solid #e5e5e5;
+    dl{
+      dt,dd{
+        display: inline-block;
+        line-height:20px;
+        color: rgba(34, 34, 34, 0.871);
+        font-size: 13px;
+        font-size: $fontSize13px;
+        font-family: "notokr-medium";
+        margin-bottom: 14px;}
+      dt{
+        width: 60%;
+        float: left;
+      }
+      dd{
+        width: 40%;
+        [class *="icon-"]{
+          vertical-align: middle;
+          margin-right: 20px;
+        }        
+        float: right;
+        margin: 0;
+        text-align:right;
+      }
+    }
+  }
+}
+
+/* 서브 컨텐츠 스타일 */
+.content{padding:20px 50px;border-left: 1px solid #dddddd;
+  h3,h4,h5{font-weight:100;}
+  h3{
+    margin-top: 55px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-size: $fontSize40px;    
+    font-family: "notokr-regular";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+  }
+  h4{
+    font-size: 24px;
+    font-size: $fontSize24px;
+    font-family: "notokr-demilight";
+    color: rgb(0, 0, 0);    
+    text-align: left;
+  }
+  h5{
+    font-size: 20px;
+    font-size: $fontSize20px;
+    font-family: "notokr-regular";
+    color: rgb(119, 119, 119);
+    line-height: 1.2;
+  }
+
+  dl{
+    dt{
+      font-size: 18px;
+      font-size: $fontSize18px;
+      font-family: "Noto Sans CJK KR";
+      color: rgb(51, 51, 51);
+      line-height: 2.667;
+      .icon-bul_00{font-size:12px;color:#3e72db;margin-right:10px;}
+    }
+    /* dt:before, dt::before{content:"";background:url(../images/)} */
+    dd{
+      margin-left: 22px;
+      font-size: 13px;
+      font-size: $fontSize13px;
+      font-family: "notokr-thin";
+      color: rgb(68, 68, 68);
+      line-height: 2;
+      font-weight: 600;
+    }
+  }
+
+}
+
+/* img관련 style */
+.img-center{text-align:center;}
+
+/* 위로 버튼 */
+.btn-top{cursor:pointer;position:absolute;bottom:30px;right:-50px;z-index:200;float:fixed;}
+.icon-icon_location_arrow{margin:0 5px;}
+
+.wrap-locatonMenu{display:inline-block;position:relative;
+    .btn-dropdown{background:url(../images/dropdown_btn.png);width:14px;height:7px;}
+    .seleted{}
+    .sub-menu{/* display:none; */position:absolute;top:20px;left:0;background:white;border:1px solid #222;
+        li{padding-left:20px;width:117px;
+          a{
+            font-size:13px;
+            font-size:$fontSize13px;
+            line-height: 2;
+          }
+        }
+    }
 }

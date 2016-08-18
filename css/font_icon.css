@@ -24,6 +24,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-bul_00:before {
+  content: "\e903";
+}
+.icon-home:before {
+  content: "\e904";
+}
+.icon-icon_arrow_left_pager:before {
+  content: "\e905";
+}
+.icon-icon_arrow_right_pager:before {
+  content: "\e906";
+}
+.icon-icon_location_arrow:before {
+  content: "\e907";
+}
 .icon-icon_hamberg:before {
   content: "\e900";
 }
