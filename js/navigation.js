@@ -26,6 +26,9 @@
 
   var $iconHamberg = $('.icon-hamberg-close');
 
+  var $locatonMenuBtn = $('.wrap-locatonMenu > .selected');
+  var $locatonMenu = $('.wrap-locatonMenu').find('.sub-menu');
+  
   settingRoleProperties();
   settingAllMenuRoleProperties();
 
@@ -105,6 +108,11 @@
       $allMenu.removeClass('active');
       $iconHamberg.removeClass('open');
     }
-
   })
+$locatonMenuBtn.on('mousedown', function(){
+  
+  $locatonMenuBtn.toggleClass('active');
+  $locatonMenu.toggleClass('active');
+})
+
 })(this);
