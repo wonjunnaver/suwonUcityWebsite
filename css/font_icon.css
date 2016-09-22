@@ -24,6 +24,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-icon_minus:before {
+  content: "\e908";
+}
+.icon-icon_plus:before {
+  content: "\e909";
+}
 .icon-bul_00:before {
   content: "\e903";
 }
@@ -48,4 +54,3 @@
 .icon-icon_new_notice:before {
   content: "\e902";
 }
-
