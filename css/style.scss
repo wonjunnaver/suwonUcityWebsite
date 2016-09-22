@@ -176,43 +176,53 @@ nav{/* float:left; */
       > ul.depth2{display:block;top: 100px;z-index:10;left: 0;width: 100%;padding:0;
         > li{float:left;
            > a{
-                border-bottom: 1px solid #ccc;
+                
             }
           }
       }
     }
     > li:nth-child(1):hover, > li:nth-child(1).active{
       > a{color:$subColor1;}
-      > ul.depth2 > li > a{
-          color: $subColor1;
+      > ul.depth2 > li > a{      	
+  		color: $subColor1;
+      }
+      > ul.depth2 > li > a:hover{
           border-bottom: 1px solid $subColor1;
         }
     }
     > li:nth-child(2):hover, > li:nth-child(2).active{
       > a{color:$subColor2;}
       > ul.depth2 > li > a{
-          color: $subColor2;
+          color: $subColor2;      	
+      }
+      > ul.depth2 > li > a:hover{
           border-bottom: 1px solid $subColor2;
         }
     }
     > li:nth-child(3):hover, > li:nth-child(3).active{
-       a{color:$subColor3;}
-       ul.depth2 > li > a{
+       >a{color:$subColor3;}
+       > ul.depth2 > li > a{
           color: $subColor3;
+       }
+       > ul.depth2 > li > a:hover{
           border-bottom: 1px solid $subColor3;
         }
     }
     > li:nth-child(4):hover, > li:nth-child(4).active{
-       a{color:$subColor4;}
-       ul.depth2 > li > a{
-          color: $subColor4;
+       >a{color:$subColor4;}
+       > ul.depth2 > li > a{
+          color: $subColor4;       	
+       }
+       > ul.depth2 > li > a:hover{
           border-bottom: 1px solid $subColor4;
         }
     }
     > li:nth-child(5):hover, > li:nth-child(5).active{
-       a{color:$subColor5;}
-       ul.depth2 > li > a{
+       >a{color:$subColor5;}
+       > ul.depth2 > li > a{
           color: $subColor5;
+       }
+       > ul.depth2 > li > a:hover{
           border-bottom: 1px solid $subColor5;
         }
     }
@@ -389,13 +399,16 @@ main{
   width: 100%;
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.13);
   h3{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid transparent;
     display: inline-block;
     font-size: 26px;
     font-size: $fontSize26px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     }
+   h3:hover{
+   	border-bottom: 1px solid white;
+   }
   p{
     font-size: 13px;
     color: white;
@@ -553,10 +566,11 @@ main{
         cursor: pointer;
       }
     }
-    button{height: 50px;line-height: 50px;width: 20%;padding-top: 4px;
-}
+  button{height: 50px;line-height: 50px;width: 20%;padding-top: 4px;
   }
-  .body{border-top:1px solid #ddd;height:234px;
+}
+  .body{border-top:1px solid #ddd;height:234px;  
+
     .tab-content{padding:20px;
       ul{
         li{width: 100%;display: inline-block;
@@ -940,7 +954,28 @@ $colorSub5-border:#3645be;/* 선색상 */
 .content{padding:20px 30px 20px 30px;border-left: 1px solid #dddddd;
   .icon_sns{margin-right:5px;}
   .icon_sns, .icon_print{cursor:pointer;}
-  h3,h4,h5{font-weight:100;}
+  h3,h4,h5{font-weight:100;}  
+  h6{
+    border-top:1px solid #f5f3f6;
+    font-size: 18px;
+    font-size: $fontSize18px;
+    font-family: "notokr-regular";
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+    line-height: 1;
+    padding-top: 20px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  h6:before{
+    content:" ";
+    display: inline-block;
+    width: 9px;
+    height: 10px;
+    background-image:url('../images/bul_01.png') ;
+    margin-right: 2px;
+  }
+
   h3{
     margin-top: 55px;
     margin-bottom: 30px;
@@ -984,6 +1019,7 @@ $colorSub5-border:#3645be;/* 선색상 */
       line-height: 2;
       font-weight: 600;
     }
+    
   }
 
 }
@@ -1024,4 +1060,59 @@ $colorSub5-border:#3645be;/* 선색상 */
     .sub-menu.active{
       display: block;
     }
+}
+.table{
+      font-size: 14px;
+      font-size: $fontSize14px;
+      font-family: "notokr-regular";
+      color: rgb(68, 68, 68);
+      line-height:1;
+      text-align: left;
+      width: 100%;
+      border:1px solid #d9d9d9;
+      border-collapse: collapse;
+      th,td{border:1px solid #d9d9d9;padding:15px 20px;}
+      th{
+        background-color:#fafafa;
+        border-top:2px solid #666;
+        border-bottom:1px solid #666;
+      } 
+    }
+.table{
+  tr{
+    td:nth-child(2){
+      /* font-family: "notokr-thin";       
+      font-weight:600;*/
+    }
+  }
+}
+
+#map{
+  width: 100%;
+  height: 430px;      
+  margin-bottom: 20px;
+}
+.box{
+  >.right{margin-left:10px;
+    .title{
+        font-size: 14px;
+        font-size: $fontSize14px;
+        font-family: "notokr-regular";
+        color: rgb(68, 68, 68);
+        font-weight: bold;
+      }
+      p{
+        font-size: 13px;
+        font-size: $fontSize13px;
+        font-family: "notokr-thin";
+        color: rgb(68, 68, 68);
+        font-weight: 600;
+      }
+      p:before{content:"-";margin-right:10px;}
+  }
+
+
+  padding: 15px;
+  border:1px solid #d9d9d9;
+  border-top:2px solid #666;
 }
