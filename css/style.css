@@ -850,6 +850,8 @@ footer {
 .lnb {
   padding-left: 20px; }
   .lnb .title-depth1 {
+    margin-top: 20px;
+    border-bottom: 1px solid #e5e5e5;
     font-size: 26px;
     font-size: 2.167rem;
     font-family: "notokr-medium";
@@ -1169,5 +1171,130 @@ footer {
     .box > .right p:before {
       content: "-";
       margin-right: 10px; }
+    .box .title{
+      font-size: 26px;
+      font-size: 2.167rem;
+      font-family: "notokr-medium";
+      color: rgb(68, 68, 68);
+      line-height: 1;
+      text-align: left;
+      margin: 40px 40px 20px 40px;
+      display: inline-block;
+    }
+    .box p{
+      font-size: 13px;
+      font-size: 1.083rem;
+      font-family: "notokr-thin";
+      font-weight: 600;
+      color: rgb(119, 119, 119);
+      line-height: 1.538;
+      text-align: left;     
+      margin-left: 40px;
+    }
+    .box .line-right-dot{
+      border-right: 1px dotted #ccc;
+      margin-top: -15px;
+      margin-bottom: -15px;
+    }
+    .box .bold{
+      font-family: "notokr-medium";
+    }
+.text-center{text-align: center;}
+.underline{border-bottom: 1px solid #f5f3f6;padding-bottom: 20px;}
 
-/*# sourceMappingURL=style.css.map */
+.btn-application{
+  font-size: 14px;
+  font-family: "notokr-regular";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: center;
+  background-color:#ffb72f;
+  padding: 10px 15px;
+  border: 1px solid #eba219;
+}
+
+
+/* 2016-09-22 임바램 */
+
+h4 {    
+  line-height: 1.2;}
+
+.box-1px {
+  padding: 20px 0;
+  margin: 30px 0 15px;
+  border: 1px solid #d9d9d9; }
+  
+.content dl p {
+  margin-left:20px;
+  font-family: font-family: "notokr-regular";
+  font-size:1.188em;
+  color: #444444;
+  font-weight:bold;
+  line-height: 1.5;
+  padding:0;}
+    
+.content dl dd .icon-bul_01 {
+    padding: 5px;
+    background: url(../images/bul_02.gif) no-repeat left 5px;}
+  
+.content dl dd .icon-bul_03{
+  margin:0;}    
+  .content dl dd .icon-bul_03 li {
+    padding-left:10px;
+    background: url(../images/bul_03.gif) 2px 10px no-repeat;
+    line-height: 2;
+    color: #717171;}
+
+.body ul.tab_00 {
+  width:100%;
+  overflow:hidden;}
+  .body ul.tab_00 li{
+    float: left; 
+    width: 25%;
+    margin-left:-1px;
+    margin-bottom:-1px;
+    font-weight: bold;
+    font-size:1.063em;
+    letter-spacing: -0.05em;
+    }
+  .body ul.tab_00 li:nth-child(1){
+    margin-left:0;
+    }
+  .body ul.tab_00 li:nth-child(5){
+    margin-left:0;
+    }
+  .body ul.tab_00 li:nth-child(5){
+    margin-bottom:0;
+    }   
+    .body ul.tab_00 li a{
+      border:1px solid #ccc;
+        display: block;
+      min-width: 74px;
+      height: 36px;
+      line-height: 34px;
+      padding: 0;
+      text-align: center;}
+      .body ul.tab_00 li.on a, .body ul.tab_00 li a:hover {
+        color: #fff;
+        font-weight: bold;
+        background: #73b735;
+        border:1px solid #73b735;}
+        
+.body ul.tab_01 {
+  width:100%;
+  overflow:hidden;
+  padding:20px 0;}
+  .body ul.tab_01 li:nth-child(1){
+    border: none;
+    padding:0 20px 0 0;
+    } 
+    .body ul.tab_01 li{
+      float: left;
+      font-weight: bold;
+      border-left: 1px solid #ccc;
+      padding: 0 20px;
+      font-weight: bold;
+      font-size:1.063em;
+      letter-spacing: -0.05em;}
+      .body ul.tab_01 li.on a, .body ul.tab_01 li a:hover {
+        color: #73b735;}      
