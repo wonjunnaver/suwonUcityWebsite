@@ -1212,89 +1212,148 @@ footer {
   padding: 10px 15px;
   border: 1px solid #eba219;
 }
+/*# sourceMappingURL=style.css.map */
+
+
 
 
 /* 2016-09-22 임바램 */
 
 h4 {    
-  line-height: 1.2;}
-
+	line-height: 1.2;}
+	
+/* img관련 style */
 .box-1px {
-  padding: 20px 0;
-  margin: 30px 0 15px;
-  border: 1px solid #d9d9d9; }
-  
+	padding: 20px 0;
+	margin: 5px 0 20px;
+	border: 1px solid #d9d9d9;}
+	
 .content dl p {
-  margin-left:20px;
-  font-family: font-family: "notokr-regular";
-  font-size:1.188em;
-  color: #444444;
-  font-weight:bold;
-  line-height: 1.5;
-  padding:0;}
-    
+	margin-left:20px;
+	font-family: font-family: "notokr-regular";
+	font-size:1.188rem;
+	color: #444444;
+	font-weight:bold;
+	line-height: 1.5;
+	padding:0;}
+	  
 .content dl dd .icon-bul_01 {
     padding: 5px;
     background: url(../images/bul_02.gif) no-repeat left 5px;}
-  
+	
 .content dl dd .icon-bul_03{
-  margin:0;}    
-  .content dl dd .icon-bul_03 li {
-    padding-left:10px;
-    background: url(../images/bul_03.gif) 2px 10px no-repeat;
-    line-height: 2;
-    color: #717171;}
+	margin:0;}		
+	.content dl dd .icon-bul_03 li {
+		padding-left:10px;
+		background: url(../images/bul_03.gif) 2px 10px no-repeat;
+		line-height: 2;
+		color: #717171;}
 
 .body ul.tab_00 {
-  width:100%;
-  overflow:hidden;}
-  .body ul.tab_00 li{
-    float: left; 
-    width: 25%;
-    margin-left:-1px;
-    margin-bottom:-1px;
-    font-weight: bold;
-    font-size:1.063em;
-    letter-spacing: -0.05em;
-    }
-  .body ul.tab_00 li:nth-child(1){
-    margin-left:0;
-    }
-  .body ul.tab_00 li:nth-child(5){
-    margin-left:0;
-    }
-  .body ul.tab_00 li:nth-child(5){
-    margin-bottom:0;
-    }   
-    .body ul.tab_00 li a{
-      border:1px solid #ccc;
-        display: block;
-      min-width: 74px;
-      height: 36px;
-      line-height: 34px;
-      padding: 0;
-      text-align: center;}
-      .body ul.tab_00 li.on a, .body ul.tab_00 li a:hover {
-        color: #fff;
-        font-weight: bold;
-        background: #73b735;
-        border:1px solid #73b735;}
-        
+	width:100%;
+	overflow:hidden;}
+	.body ul.tab_00 li{
+		float: left; 
+		width: 25%;
+		margin-left:-1px;
+		margin-bottom:-1px;
+		font-weight: bold;
+		font-size:1.063rem;
+		letter-spacing: -0.05em;
+		}
+	.body ul.tab_00 li:nth-child(1){
+		margin-left:0;
+		}
+	.body ul.tab_00 li:nth-child(5){
+		margin-left:0;
+		}
+	.body ul.tab_00 li:nth-child(5){
+		margin-bottom:0;
+		}		
+		.body ul.tab_00 li a{
+			border:1px solid #ccc;
+		    display: block;
+			min-width: 74px;
+			height: 36px;
+			line-height: 34px;
+			padding: 0;
+			text-align: center;
+			text-decoration:none;
+			color: #444444;}
+			.body ul.tab_00 li.on a, .body ul.tab_00 li a:hover {
+				color: #fff;
+				font-weight: bold;
+				background: #73b735;
+				border:1px solid #73b735;}
+				
 .body ul.tab_01 {
-  width:100%;
-  overflow:hidden;
-  padding:20px 0;}
-  .body ul.tab_01 li:nth-child(1){
-    border: none;
-    padding:0 20px 0 0;
-    } 
-    .body ul.tab_01 li{
-      float: left;
-      font-weight: bold;
-      border-left: 1px solid #ccc;
-      padding: 0 20px;
-      font-weight: bold;
-      font-size:1.063em;
-      letter-spacing: -0.05em;}
-      .body ul.tab_01 li.on a, .body ul.tab_01 li a:hover {
-        color: #73b735;}      
+	width:100%;
+	overflow:hidden;
+	padding:20px 0;}
+	.body ul.tab_01 li:nth-child(1){
+		border: none;
+		padding:0 20px 0 0;
+		}	
+		.body ul.tab_01 li{
+			float: left;
+			font-weight: bold;
+			border-left: 1px solid #ccc;
+			padding: 0 20px;
+			font-weight: bold;
+			font-size:1.063rem;
+			letter-spacing: -0.05em;}
+			
+			
+/* 2016-09-23 임바램 */
+
+			.body ul.tab_01 li a{
+				text-decoration:none;
+				color: #444444;}				
+				.body ul.tab_01 li.on a, .body ul.tab_01 li a:hover {
+					color: #73b735;
+					text-decoration:none;}
+
+/*여백관련 style*/
+.mrgTop20{
+	margin-top:20px;
+	}							
+	
+.content .list-area:before{
+	content: " ";
+	border-bottom: 2px solid #444444;
+	display:block;
+    margin-top: 0px;
+    margin-bottom: 20px;}
+	.content .list-area dl {
+		padding-right:20px;}
+	.content .list-area dl dt{
+		padding-left: 20px;
+		font-family: "notokr-regular";
+		font-size:1.188em;
+		color: #444444;
+		line-height: 1.5rem;
+		font-weight:600;
+		padding-bottom:10px;}
+		.content .list-area dl dd:before{
+			content: " ";
+			display:inline-block;
+			 padding: 5px;
+   			 background: url(../images/bul_02.gif) no-repeat left 5px;}
+			 .content .list-area dl dd{
+				 line-height:0.5rem;}
+			.content .list-area dl dd:last-child{
+				border-bottom: 1px dashed #e7e7e7;
+				padding-bottom:15px;}	
+.btn-application-5{
+  font-size: 14px;
+  font-family: "notokr-regular";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: center;
+  background-color:#5d6cdf;
+  padding: 10px 15px;
+  border: 1px solid #3645be;
+}
+
+.content dl dd table tr td{
+	font-weight:400;}
