@@ -1,0 +1,88 @@
+.D001, .D002, .D003, .D004, .D005, .D006, .D007, .D008, .D009, .D010, .D011, .D012, .D013, .D999{
+	background: url(sprites_w.png) no-repeat;
+}
+
+.D001{
+	background-position: 0 0;
+	width: 70px;
+	height: 70px;
+}
+
+.D002{
+	background-position: -85px -4px ;
+	width: 72px;
+	height: 49px;
+}
+
+.D003{
+	background-position: -213px 0;
+	width: 67px;
+	height: 45px;
+}
+
+.D004{
+	background-position: -396px 0;
+	width: 67px;
+	height: 39px;
+}
+
+.D005{
+	background-position: 0 -82px ;
+	width: 65px;
+	height: 47px;
+}
+
+.D006{
+	background-position: -109px -87px ;
+	width: 72px;
+	height: 71px;
+}
+
+.D007{
+	background-position: -190px -88px ;
+	width: 71px;
+	height: 72px;
+}
+
+.D008{
+	background-position: -280px -88px ;
+	width: 62px;
+	height: 50px;
+}
+
+.D009{
+	background-position: -360px -92px ;
+	width: 51px;
+	height: 57px;
+}
+
+.D010{
+	background-position: -368px -179px ;
+	width: 72px;
+	height: 49px;
+}
+
+.D011{
+	background-position: -368px -179px ;
+	width: 69px;
+	height: 60px;
+}
+
+.D012{
+	background-position: -59px -280px ;
+	width: 69px;
+	height: 66px;
+}
+
+.D013{
+	background-position: -132px -371px ;
+	width: 80px;
+	height: 53px;
+}
+
+.D999{
+	background-position: -228px -418px ;
+	width: 61px;
+	height: 4px;
+}
+
