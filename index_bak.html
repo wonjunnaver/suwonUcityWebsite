@@ -5,7 +5,7 @@
 	<!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9 ie8" dir="ltr" lang="ko-KR"> <![endif]-->
 	<!--[if IE 9]> <html class="no-js lt-ie10 ie9" dir="ltr" lang="ko-KR"> <![endif]-->
 	<meta charset="UTF-8">
-	<title>수원유시티 통합 홈페이지 서브페이지</title>	 
+	<title>수원유시티 통합 홈페이지</title>	 
 	<meta name="description" content="광교, 호매실 유시티 통합 홈페이지 입니다">
 	<meta name="keywords" content="수원유시티, U-CITY, 호매실, 광교">
 	<meta name="author" content="innerinfo">
@@ -18,7 +18,7 @@
 	<!-- 스타일 로드 -->
 	<link rel="stylesheet" href="css/guide.css">
 	<link rel="stylesheet" href="css/iconizr-svg-data.css">
-	<link rel="stylesheet" href="css/sprites.css">	
+	<link rel="stylesheet" href="css/sprites.css">
 	<link rel="stylesheet" href="css/style.css">
 	
 	<!-- 스크립트 로드 -->
@@ -27,9 +27,10 @@
 	<script src="lib/jquery-2.1.1.min.js"></script>
 	<link rel="stylesheet" href="lib/slick.css">
 	<script src="lib/slick.min.js"></script>
+	
 </head>
 <body class="">
-<div class="container">
+<div class="container guide">
 	<div class="guide-overlay"></div>
 </div>
 <!--[if lte IE 8]>
@@ -61,13 +62,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-3">
-				<h1 class="brand"><a class="icon-logo-dims icon-logo" href="#!" title="홈으로 이동"></a></h1>
+				<h1 class="brand"><a class="icon-logo-dims icon-logo" href="index.html" title="홈으로 이동"></a></h1>
 			</div>
 			<div class="wrap-nav col-9">
 				<nav class="page-navigation">
 					<ul class="row">
 						<li class="">
-							<a href="#!">센터소개</a>
+							<a href="subpage01.html">센터소개</a>
 							<ul class="">
 								<li class="col-offset-3 col-3"><a href="#!">연혁</a></li>
 								<li class="col-3"><a href="#!">찾아오시는 길</a></li>
@@ -75,7 +76,7 @@
 							</ul>
 						</li>
 						<li>
-							<a href="#!">U-City란</a>
+							<a href="subpage02.html">U-City란</a>
 							<ul class="">
 								<li class="col-offset-3 col-3"><a href="#!">개요</a></li>
 								<li class="col-3"><a href="#!">목적</a></li>
@@ -86,7 +87,7 @@
 							</ul>
 						</li>
 						<li>
-							<a href="#!">생활정보</a>
+							<a href="subpage03.html">생활정보</a>
 							<ul class="">
 								<li class="col-offset-3 col-3"><a href="#!">새소식</a></li>
 								<li class="col-3"><a href="#!">행사정보</a></li>
@@ -96,7 +97,7 @@
 							</ul>
 						</li>
 						<li>
-							<a href="#!">환경</a>
+							<a href="subpage04.html">환경</a>
 							<ul class="">							
 								<li class="col-offset-3 col-3"><a href="#!">대기정보</a>
 									<!-- <ul class="">
@@ -119,7 +120,7 @@
 							</ul>
 						</li>
 						<li>
-							<a href="#!">교통정보</a>
+							<a href="subpage05.html">교통정보</a>
 							<ul class="">
 								<li class="col-offset-3 col-3"><a href="#!">교통정보</a></li>
 							</ul>
@@ -213,123 +214,160 @@
 	</div><!-- 전체메뉴 end -->
 </header>
 <main>
-	<div class="sub-mainVis sub1">
+	<section class="page1">
 		<div class="container">
-			<div class="row">
-				<div class="col-3 wrap-vis">
-					<div class="row vis"></div>
-				</div>
-				<div class="col-6 vis-text">
-					한번쯤 마음에 두었던 도시, 자연이 완성해가는 산소 도시<br><span class="big">수원시 유시티입니다.</span>
-				</div>
-				<div class="col-offset-1 col-2">
-					<div class="vis-end"></div>
+			<div class="row massage">
+				<div class="col-12">
+					<span>한번 쯤 마음에 두었던 도시, 자연이 완성해 가는 산소 도시</span>
+					<span class="big">수원 U-City</span>
+					<span class="normal">입니다.</span>
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-3 wrap-lnb">
-				<div class="lnb">
-					<div class="title-depth1">센터소개</div>
-					<ul class="">
-						<li class="active"><a href="#!">연혁</a></li>
-						<li class=""><a href="#!">찾아오시는 길</a></li>
-						<li class=""><a href="#!">견학신청</a></li>
-					</ul>
+			<div class="row">
+				<div class="col-3 doc-left">
+					<a href="#">
+						<div class="card infoWater boxShadow">
+							<h3>수질정보</h3>
+							<p>수질자료를 실시간으로 수집, 관리하여 쾌적한 수변환경을 유지합니다.</p>
+							<img src="images/icon_plus.png" alt="수질정보 더보기">
+							<span class="icon-icon_water-dims icon-icon_water"></span>
+						</div>
+					</a>
+					<a href="#">
+						<div class="card infoTraffic boxShadow">
+							<h3>교통정보</h3>
+							<p>도로 특성및 환경을 고려한 최신기술을 적용하여 최적의 시스템을 선정하여 관리합니다. </p>
+							<img src="images/icon_plus.png" alt="교통정보 더보기">
+							<span class="icon-icon_map-dims icon-icon_map"></span>
+						</div>
+					</a>
 				</div>
-				<div class="row wrap-widjetWeather">
-					<div class="widjetWeather">
-						<span class="iconWeather"></span>						
-						<span class="today">2016.08.09 15:00</span>
-						<span class="temp">29</span>
-						<span class="textWeather">비</span>
+				<div class="col-6">
+					<div class="doc-center boxShadow">
+						<p class="sr-only">배경 사진은 가상의 도시를 보고있는 여아이와 도시를 손가락으로 가리키고 있는 남자아이</p>
+						<span>한번 쯤 마음에 두었던 도시, 이 안에 다 담겠습니다.</span>
+						<h3>One the Full City is Wonderful</h3>
 					</div>
-					<!-- <div class="widjetAir">
-						<dl>
-							<dt>통합대기환경지수</dt><dd>보통</dd>
-							<dt>오존</dt><dd>보통</dd>
-							<dt>미세먼지</dt><dd>보통</dd>
-							<dt>초미세먼지</dt><dd>보통</dd>
-							<dt>부패지수</dt><dd>좋음</dd>
-							<dt>아황산가스</dt><dd>좋음</dd>
-							<dt>이산화질소</dt><dd>좋음</dd>
-							<dt>일산화탄소</dt><dd>좋음</dd>
-						</dl>
-					</div> -->
-					<div class="widjetAir">
-						<div class="row subPage">
-							<div class="widjetAir_k col-6">
-							<span><b>광교대기정보</b></span>
-							<dl>
-								<dt>통합대기<br>환경지수</dt><dd>매우<br>나쁨</dd>
-								<dt>아황산가스</dt><dd>보통</dd>
-								<dt>이산화질소</dt><dd>보통</dd>
-								<dt>오존</dt><dd>보통</dd>
-								<dt>미세먼지</dt><dd>보통</dd>
-								<dt>초미세먼지</dt><dd>보통</dd>								
-								<dt>일산화탄소</dt><dd>보통</dd>							
-							</dl>
+				</div>
+				<div class="col-3 doc-right">
+					<div class="boxShadow">
+						<div class="widjetWeather">
+							<div class="wrap-left">
+								<span class="temp">29</span>
+								<span class="today">2016.08.09 15:00</span>
 							</div>
-							<div class="widjetAir_h col-6">
-							<span><b>호매실대기정보</b></span>
-							<dl>
-								<dt>통합대기<br>환경지수</dt><dd>매우<br>나쁨</dd>
-								<dt>아황산가스</dt><dd>보통</dd>
-								<dt>이산화질소</dt><dd>보통</dd>
-								<dt>오존</dt><dd>보통</dd>
-								<dt>미세먼지</dt><dd>보통</dd>						
-								<dt>일산화탄소</dt><dd>보통</dd>							
-							</dl>
+							<div class="wrap-right">						
+								<div class="wrap-right">	
+ 								 <span class="icon-w_D002_0-dims icon-w_D002"></span>
+								<span class="textWeather">약간흐림</span>
+							</div>
+							</div>
+						</div>
+						<div class="widjetAir row">
+							<div class="row subPage">
+								<div class="widjetAir_k col-6">
+								<span><b>광교대기정보</b></span>
+								<dl>
+									<dt>통합대기<br>환경지수</dt><dd><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_0"></span></dd>
+									<dt>아황산가스</dt><dd><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_0"></span></dd>
+									<dt>이산화질소</dt><dd><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_1"></span></dd>
+									<dt>오존</dt><dd><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_1"></span></dd>
+									<dt>미세먼지</dt><dd><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_2"></span></dd>
+									<dt>초미세먼지</dt><dd><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_2"></span></dd>								
+									<dt>일산화탄소</dt><dd><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_3"></span></dd>							
+								</dl>
+								</div>
+								<div class="widjetAir_h col-6">
+								<span><b>호매실대기정보</b></span>
+								<dl>
+									<dt>통합대기<br>환경지수</dt><dd><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_0"></span></dd>
+									<dt>아황산가스</dt><dd><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_0"></span></dd>
+									<dt>이산화질소</dt><dd><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_1"></span></dd>
+									<dt>오존</dt><dd><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_1"></span></dd>
+									<dt>미세먼지</dt><dd><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_2"></span></dd>						
+									<dt>일산화탄소</dt><dd><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_3"></span></dd>							
+								</dl>
+								</div>
+							</div>
+							<div class="legend row">
+								<div class=" text-center">
+									<div class="col-3"><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_0"></span><br>좋음</div>
+									<div class="col-3"><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_1"></span><br>보통</div>
+									<div class="col-3"><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_2"></span><br>나쁨</div>
+									<div class="col-3"><span class="icon-icon_w_emoticon_0-dims icon-icon_w_emoticon_3"></span><br>매우나쁨</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="content col-9">
-				<div class="location">
-					<a href="#"><div class="icon-home"></div></a><span class="icon-icon_location_arrow"></span>
-					<div class="wrap-locatonMenu">
-						<div class="selected">센터소개<div class="btn-dropdown"></div></div>
-						<ul class="sub-menu">
-							<!-- <li><a href="#">센터소개</a></li> -->
-							<li><a href="#">U-City란</a></li>
-							<li><a href="#">생활정보</a></li>
-							<li><a href="#">환경</a></li>
-							<li><a href="#">교통정보</a></li>
-						</ul>
+		</div>
+	</section>
+	<section class="page2">
+		<div class="container">
+			<div class="row">
+				<div class="col-3">
+					<div class="banner-wrap">
+						<div class="banner-item-group">
+							<div class="banner-item"><img src="images/bannerImg.jpg" alt="배너 설명"></div>	
+							<div class="banner-item"><img src="images/bannerImg.jpg" alt="배너 설명"></div>
+						</div>
+						<div class="banner-footer">
+							<div class="controller">
+								<span class="icon_chevron_left"></span>
+								<span class="icon_pause"></span>
+								<span class="icon_chevron_right"></span>
+							</div>
+							<div class="numbering">
+								<span class="currentNum">1</span><span class="totalNum">/5</span>
+							</div>
+						</div>
 					</div>
-					</a><span class="icon-icon_location_arrow"></span><a href="#">연혁</a>
 				</div>
-				<div class="body">
-					<h3>연혁</h3>
-					<h4>Global leading smart city</h4>
-					<h5>안전하고, 쾌적하며 편리한 도시 구현의 선도자!<br>수원시 유시티!</h5>
-					<dl>
-						<dt><div class="icon-bul_00"></div>U-City의 정의(U-도시법 제 2조)</dt>
-						<dd>①도로, 교량, 학교, 병원 등 도시기반시설에</dd>
-						<dd>②첨단 정보통신기술을 융합하여 유비쿼터스기반시설을 구축하여</dd>
-						<dd>③교통, 환경, 복지 등 각종 유비쿼터스서비스를 언제 어디서나 제공하는 도시입니다.</dd>
-					</dl>
-					<dl>
-						<dt><div class="icon-bul_00"></div>U-City의 정의(U-도시법 제 2조)</dt>
-						<dd>①도로, 교량, 학교, 병원 등 도시기반시설에</dd>
-						<dd>②첨단 정보통신기술을 융합하여 유비쿼터스기반시설을 구축하여</dd>
-						<dd>③교통, 환경, 복지 등 각종 유비쿼터스서비스를 언제 어디서나 제공하는 도시입니다.</dd>
-					</dl>
-					<dl>
-						<dt><div class="icon-bul_00"></div>U-City의 정의(U-도시법 제 2조)</dt>
-						<dd>①도로, 교량, 학교, 병원 등 도시기반시설에</dd>
-						<dd>②첨단 정보통신기술을 융합하여 유비쿼터스기반시설을 구축하여</dd>
-						<dd>③교통, 환경, 복지 등 각종 유비쿼터스서비스를 언제 어디서나 제공하는 도시입니다.</dd>
-					</dl>
-					<div class="img-center"><img src="images/img_010100.png" alt=""></div>
+				<div class="col-6">
+					<div class="notice-wrap">
+						<div class="header">
+							<ul>
+								<li class="active"><span class="icon-icon_new_notice"></span> 새소식</li>
+								<li><span class="icon-icon_info_notice"></span> 행사정보</li>
+							</ul>
+							<button class="btn-noticeMore"><span class="icon_more_notice"></span></button>
+						</div>
+						<div class="body">
+							<div class="tab-content">
+								<ul>
+									<li><a href="#">2016 FTA권역 바이어 수출상담회 자원봉사자 모집 안내<span class="date">2016.06.20</span></a></li>
+									<li><a href="#">2016 FTA권역 바이어 수출상담회 자원봉사자 모집 안내<span class="date">2016.06.20</span></a></li>
+									<li><a href="#">2016 FTA권역 바이어 수출상담회 자원봉사자 모집 안내<span class="date">2016.06.20</span></a></li>
+									<li><a href="#">2016 FTA권역 바이어 수출상담회 자원봉사자 모집 안내<span class="date">2016.06.20</span></a></li>
+									<li><a href="#">2016 FTA권역 바이어 수출상담회 자원봉사자 모집 안내<span class="date">2016.06.20</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="info-wrap">
+						<div class="infoExcursions">
+							<h2>견학안내</h2>
+							<p>도시안전통합센터의<br>방문신청 안내입니다.</p>
+						</div>
+						<div class="infoComplaints">
+							<div class="icon_info"></div>
+							<div class="text">민원안내</div>
+						</div>
+						<div class="infoPhone">
+							<div class="phoneNumber">1899-<br>3300</div>
+							<div class="text">수원시 콜센터</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<img class="btn-top" src="images/topBtn.png" alt="위로 이동">
 		</div>
-	</div>
+	</section>
+	<section class="page3">
+		<div class="container"></div>
+	</section>
 </main>
 <footer>
 	<div class="container">
